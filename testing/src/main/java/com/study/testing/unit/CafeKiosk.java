@@ -32,4 +32,8 @@ public class CafeKiosk {
         }
         return totalPrice;
     }
+
+    public Order craeteOrder() {
+        return new Order(LocalDateTime.now(),beverages);
+    }
 }
